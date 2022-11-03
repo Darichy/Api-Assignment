@@ -58,6 +58,7 @@ class ShowController extends Controller
         foreach($data as $key => $value)
         if($key === $id){
            return [$key => $value];
-        }
+        }else{
+            return("This user does not exist");
     }
 }
